@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+}
+
+p, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+
+.card {
+  height: 95vh;
+  width: 80vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: auto;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: rgb(217, 44, 73);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 3%;
+}
+
+.navbar p{
+  color: aliceblue;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-section {
+  padding: 2%;
+  
+}
+
+.container {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+}
+
+.img {
+  width:200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content-container {
+  padding: 5px;
+  display: block;
+}
+
+.loc {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+.start-end-date {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.desc {
+  font-size: 14px;
+  padding-top: 5px;
+}

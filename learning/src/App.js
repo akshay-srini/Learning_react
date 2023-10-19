@@ -1,22 +1,20 @@
-import './App.css';
-import Navbar from './Components/Navbar'
-import Data from './Components/Data'
-import Hero from './Components/Hero'
-function App() { 
-  const dataItem = Data.map(item => {
-    return [
-      <Hero {...item} />
-    ]
-    
-  })
+import React, {useState} from 'react'
 
+export default function App() {
+  const [count, setCount] = useState(0)
+
+  function handleIncrease() {
+    setCount(prevCount => prevCount + 1)
+  }
+
+  function handleDecrease() {
+    setCount(prevCount => prevCount - 1)
+  }
   return (
-    <div className='card'>
-      <Navbar />
-      {dataItem}
-    </div>
-  );
+    <>
+      <h1>Count: {count}</h1>
+      <button onClick={handleIncrease}>Increment</button>
+      <button onClick={handleDecrease}>Decrement</button>
+    </>
+  )
 }
-
-export default App;
-

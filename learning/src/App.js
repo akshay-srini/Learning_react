@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 
 export default function App() {
-  const [count, setCount] = useState(0)
-
+  const [count1, setCount] = useState(0)
   function handleIncrease() {
     setCount(prevCount => prevCount + 1)
   }
@@ -12,7 +11,7 @@ export default function App() {
   }
   return (
     <>
-      <h1>Count: {count}</h1>
+      <h1>Count: {count1}</h1>
       <button onClick={handleIncrease}>Increment</button>
       <button onClick={handleDecrease}>Decrement</button>
     </>
